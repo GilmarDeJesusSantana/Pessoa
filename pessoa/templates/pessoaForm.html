@@ -1,0 +1,19 @@
+{% extends "pessoabase.html"%}
+{% block body%}
+<hr class="form-signin-heading" action="" method="post">
+    {%csrf_token%}
+    <h2 class="form-signin-heading">Criar Pessoa</h2>
+        <input id="id_nome" name="nome" type="text" class="form-control" placeholder="Nome " required>
+        <input id="id_cpf" name="cpf" type="text" class="form-control" placeholder="CPF">
+        <input id="id_telefone" name="telefone" type="text" class=" form-control" placeholder="Telefone">
+        <input id="id_rua" name="rua" type="text" class="form-control" placeholder="Rua" >
+        <input id="id_numero" name="numero" type="text" class="form-control" placeholder="Numero">
+        <input id="id_bairro" name="bairro" type="text" class="form-control" placeholder="Bairro">
+        <input id="id_cep" name="cep" type="text" class="form-control" placeholder="CEP">
+        <input id="id_apartamento" name="apartamento" type="text" class="form-control" placeholder="Apartamento">
+        <input id="id_bloco" name="bloco" type="text" class="form-control" placeholder="Bloco">
+        <input id="id_complemento" name="complemento" type="text" class="form-control" placeholder="Complemento">
+</hr>
+    <button class="btn btn-lg btn-primary btn-block" type="submit">Registrar</button>
+</form>
+{% endblock %}
