@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="815c628b-3484-4cb1-ae2d-b6e461bff1c0" name="Default Changelist" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pessoa/static/styles/bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/people/settings.py" afterPath="$PROJECT_DIR$/people/settings.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pessoa/models.py" afterPath="$PROJECT_DIR$/pessoa/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pessoa/templates/index.html" afterPath="$PROJECT_DIR$/pessoa/templates/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pessoa/templates/pessoaForm.html" afterPath="$PROJECT_DIR$/pessoa/templates/pessoaForm.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pessoa/templates/pessoabase.html" afterPath="$PROJECT_DIR$/pessoa/templates/pessoabase.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pessoa/urls.py" afterPath="$PROJECT_DIR$/pessoa/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pessoa/views.py" afterPath="$PROJECT_DIR$/pessoa/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -68,8 +59,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pessoa/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-160">
-              <caret line="7" column="64" lean-forward="false" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
+            <state relative-caret-position="386">
+              <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -100,8 +91,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pessoa/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="280">
+              <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -169,12 +160,12 @@
         <option value="$PROJECT_DIR$/pessoa/templates/pessoa_cadastro.html" />
         <option value="$PROJECT_DIR$/pessoa/templates/style.css" />
         <option value="$PROJECT_DIR$/people/settings.py" />
-        <option value="$PROJECT_DIR$/pessoa/models.py" />
         <option value="$PROJECT_DIR$/pessoa/templates/pessoaForm.html" />
         <option value="$PROJECT_DIR$/pessoa/urls.py" />
         <option value="$PROJECT_DIR$/pessoa/templates/pessoabase.html" />
         <option value="$PROJECT_DIR$/pessoa/templates/index.html" />
         <option value="$PROJECT_DIR$/pessoa/views.py" />
+        <option value="$PROJECT_DIR$/pessoa/models.py" />
       </list>
     </option>
   </component>
@@ -786,8 +777,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pessoa/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-160">
-          <caret line="7" column="64" lean-forward="false" selection-start-line="7" selection-start-column="64" selection-end-line="7" selection-end-column="64" />
+        <state relative-caret-position="386">
+          <caret line="32" column="9" lean-forward="true" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
           </folding>
@@ -796,8 +787,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pessoa/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="280">
+          <caret line="14" column="40" lean-forward="true" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
           <folding />
         </state>
       </provider>
