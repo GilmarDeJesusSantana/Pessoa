@@ -13,6 +13,7 @@ class Endereco(models.Model):
 
 class  Pessoa(models.Model):
     nome = models.CharField(max_length=100)
+    titulo= models.CharField(max_length=12)
     cpf = models.CharField(max_length=11)
     telefone = models.CharField(max_length=15)
     endereco = models.ForeignKey(Endereco, on_delete=models.CASCADE)
