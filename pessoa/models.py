@@ -16,3 +16,8 @@ class  Pessoa(models.Model):
     bloco = models.CharField(max_length=3)
     apartamento = models.CharField(max_length=4)
     complemento = models.CharField(max_length=20)
+    def publish(self):
+        self.save()
+
+    def __str__(self):
+        return self.nome

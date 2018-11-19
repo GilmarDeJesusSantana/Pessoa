@@ -1,11 +1,12 @@
 from django.shortcuts import render
 from django.template import loader
 from django.views.generic.base import TemplateView
-from pessoa.models import Pessoa
+from .models import Pessoa
 from django import forms
 
 def index(request):
-    return render(request,'index.html',{'nome':'Samuel da Silva.'})
+    pessoas = Pessoa.objects.all()
+    return render(request,'index.html',{'pessoas':pessoas})
 
 
 class CadastroPessoaView(TemplateView):
@@ -31,7 +32,7 @@ class CadastroPessoaView(TemplateView):
                         apartamento=dados_form['apartamento'],
                         complemento=dados_form['complemento']
         )
-        Pessoa.save()
+        Pessoa.publish()
         print ('Dados Registrados!!')
         return render(request,'pessoaForm.html')
 #def post(self, request):

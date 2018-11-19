@@ -1,5 +1,8 @@
 {%extends "pessoabase.html"%}
 {%block body%}
 {{nome}}
-
+{{pessoas}}
+{%for pessoa in pessoas%}
+	{{pessoa}}
+{% endfor%}
 {% endblock%}
