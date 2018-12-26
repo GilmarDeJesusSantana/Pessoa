@@ -12,13 +12,16 @@ def index(request):
 class CadastroPessoaView(TemplateView):
     template_name = 'pessoaForm.html'
 
+
     # este metodo envia o html para o browser
     def get(self, request):
+        print('Metodo chamado----> GET.')
         return render(request, self.template_name)
+        print('Render processado-->')
 
     def post(self, request):
         dados_form = forms.data
-
+        print('Metodo chamado----> Post')
         pessoa = Pessoa(nome=dados_form['nome'],
                         titulo= dados_form['titulo'],
                         cpf=dados_form['cpf'],
