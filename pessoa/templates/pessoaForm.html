@@ -1,6 +1,6 @@
 {% extends "pessoabase.html"%}
 {% block body%}
-<hr class="form-signin-heading" action="{% url 'cadastro_pessoa'%}" method="post">
+<form class="form-signin-heading" action="{% url 'cadastro_pessoa'%}" method="post">
     {%csrf_token%}
     <h2 class="form-signin-heading">Criar Pessoa</h2>
         <input style="margin-bottom:10px" id="id_nome" name="nome" type="text" class="form-control" placeholder="Nome " required>

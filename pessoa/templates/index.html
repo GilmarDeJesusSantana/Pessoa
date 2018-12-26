@@ -1,8 +1,6 @@
 {%extends "pessoabase.html"%}
 {%block body%}
-{{nome}}
-{{pessoas}}
 {%for pessoa in pessoas%}
-	{{pessoa}}
-{% endfor%}
+			<p>{{pessoa|linebreaksbr}}</p>
+	{% endfor%}
 {% endblock%}
