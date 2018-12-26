@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.template import loader
 from django.views.generic.base import TemplateView
 from .models import Pessoa
+from pessoa.forms import RegistraPessoaForm
 from django import forms
 
 def index(request):
@@ -20,7 +21,8 @@ class CadastroPessoaView(TemplateView):
         print('Render processado-->')
 
     def post(self, request):
-        dados_form = forms.data
+        form = RegistraPessoaForm(request.POST)
+        dados_form = form.data
         print('Metodo chamado----> Post')
         pessoa = Pessoa(nome=dados_form['nome'],
                         titulo= dados_form['titulo'],
@@ -35,7 +37,7 @@ class CadastroPessoaView(TemplateView):
                         apartamento=dados_form['apartamento'],
                         complemento=dados_form['complemento']
         )
-        Pessoa.publish()
+        pessoa.save()
         print ('Dados Registrados!!')
         return render(request,'pessoaForm.html')
 #def post(self, request):
