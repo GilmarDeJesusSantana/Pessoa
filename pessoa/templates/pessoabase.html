@@ -8,32 +8,60 @@
     <script src="{% static 'js/bootstrap.js'%}" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap.css'%}">
     <link rel="stylesheet" type="text/css" href="{% static 'styles/bootstrap.min.css'%}">
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/people.css'%}">
 
     <title>Pessoas</title>
 </head>
 <body>
-<div class="container">
-<nav class="navbar navbar-default" role="navigation">
-    <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bar1">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Site</a>
-    </div>
-
-    <div class="collapse navbar-collapse" id="bar1">
-        <ul class="nav navbar-nav">
-            <li class="active"><a href="/cadastro_pessoa">Pessoas</a></li>
-            <li><a href="/">Lista de Pessoas</a></li>
-            <li><a href="#">Sair</a></li>
-        </ul>
-    </div>
-
+<header class="cabecalho">
+    <h1 class="logo">
+        <a href="index.html" title="Pessoas">Pessoas</a>
+    </h1>
+    <form method="post">
+        <input type="text" placeholder="Faça uma pesquisa">
+        <button><i class="pesquisar"></i></button>
+    </form>
+</header>
+<nav class="menu">
+    <ul>
+        <li><a href="/cadastro_pessoa"/>Cadastro de Pessoas</li>
+        <li><a href="/"/>Pesquisar Pessoas</li>
+        <li><a href="#"/>Sair</li>
+    </ul>
 </nav>
 
+<!--<div class="container">-->
+<!--<nav class="nav-bar navbar-default" role="navigation">-->
+    <!--<div class="nav-container navbar-header">-->
+        <!--<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bar1">-->
+            <!--<span class="sr-only">Toggle navigation</span>-->
+            <!--<span class="icon-bar"></span>-->
+            <!--<span class="icon-bar"></span>-->
+            <!--<span class="icon-bar"></span>-->
+        <!--</button>-->
+        <!--<a class="navbar-brand" >☰ Menu</a>-->
+    <!--</div>-->
+
+    <!--<div class="collapse navbar-collapse" id="bar1">-->
+        <!--<ul class="nav navbar-nav">-->
+            <!--<li class="active"><a href="/cadastro_pessoa">Pessoas</a></li>-->
+            <!--<li><a href="/">Lista de Pessoas</a></li>-->
+            <!--<li><a href="#">Sair</a></li>-->
+        <!--</ul>-->
+    <!--</div>-->
+
+<!--</nav>-->
+<!--Menu de Teste-->
+<!--   <div id="lateral">-->
+<!--       <nav class="nav">-->
+<!--           <h3 class="link-titulo">Menu</h3>-->
+<!--               <ul class="box">-->
+<!--                   <li class="active"><a href="/cadastro_pessoa">Pessoas</a></li>-->
+<!--                   <li><a href="/">Lista de Pessoas</a></li>-->
+<!--                   <li><a href="#">Sair</a></li>-->
+<!--               </ul>-->
+<!--       </nav>-->
+<!--   </div> -->
 
 
   <!-- <div class="header">-->
@@ -49,12 +77,6 @@
         {%block body%}
         {%endblock%}
     </div>
-</div>
-<div class="jumbotron jumbotron-fluid">
-    <div class="container">
-        <h1 class="display-4">Ótima escolha!</h1>
-        <p class="lead">Obrigado por comprar na Mirror Fashion.</p>
-
-</div>
+<!--</div>-->
 </body>
 </html>
