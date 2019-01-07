@@ -1,6 +1,16 @@
 {%extends "pessoabase.html"%}
 {%block body%}
-{%for pessoa in pessoas%}
+<div class="row">
+	<div id="label" class="col-6">Nome </div>
+	<div id="label" class="col-4">Titulo</div>
+	{%for pessoa in pessoas%}
+		<div class="col-8">
 			<p>{{pessoa|linebreaksbr}}</p>
+		</div>
+		<div class="col-4"></div>
 	{% endfor%}
+
+
+</div>
+
 {% endblock%}

@@ -13,16 +13,17 @@
     <title>Pessoas</title>
 </head>
 <body>
-<header class="cabecalho">
+<header id="topo">
     <h1 class="logo">
         <a href="index.html" title="Pessoas">Pessoas</a>
     </h1>
     <form method="post">
-        <input type="text" placeholder="Faça uma pesquisa">
-        <button><i class="pesquisar"></i></button>
+        <input type="text" placeholder="Nome da Pessoa">
+        <button><i class="pesquisar"></i>Buscar</button>
     </form>
 </header>
-<nav class="menu">
+
+<nav id="menu"">
     <ul>
         <li><a href="/cadastro_pessoa"/>Cadastro de Pessoas</li>
         <li><a href="/"/>Pesquisar Pessoas</li>
@@ -72,11 +73,20 @@
   <!--     </ul>-->
   <!--     </nav>-->
   <!--     <h3 class="text-muted">Pessoas</h3>-->
-    <!--</div>                                 -->
-    <div class="row content">
-        {%block body%}
-        {%endblock%}
+    <!--</div>-->
+<section id="meio">
+<article id="conteudo">
+    <div >
+        <div >
+            {%block body%}
+            {%endblock%}
+        </div>
     </div>
-<!--</div>-->
+</article>
+</section>
+<footer id="rodape">
+    <p>Footer</p>
+</footer>
+
 </body>
 </html>

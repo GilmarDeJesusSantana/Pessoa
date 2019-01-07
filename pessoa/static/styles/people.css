@@ -29,149 +29,82 @@ body{
     font: 62.5%/1.2 Verdana, Helvetica, Arial, sans-serif;
 }
 
-#lateral{
-    padding: 0 50px 0 0;
-    -moz-transition: all 0.5s ease;
-        -webkit-transition: all 0.5s ease;
-            -o-transition: all 0.5s ease;
-                transition: all 0.5s ease;
-    font-size:1.2em;
-    background:rgb(44,62,80);
-    background-image: -moz-linear-gradient(135deg, rgb(3,8,12), rgb(16,57,79));
-     background-image: -webkit-linear-gradient(135deg, rgb(3,8,12), rgb(16,57,79));
-      background-image: -o-linear-gradient(135deg, rgb(3,8,12), rgb(16,57,79));
-       background-image: -ms-linear-gradient(135deg, rgb(3,8,12), rgb(16,57,79));
-        background-image: linear-gradient(135deg, rgb(3,8,12), rgb(16,57,79));
-    height: 100%;
-    overflow:hidden;
-    width:370px;
-    position: fixed;
-    top:0;
-    left:-320px;
+*{
+    padding:0px;
+    margin:0px;
 }
-
-#lateral:before{
-    z-index:1000;
-    content: url(icone-menu.png);
-    font-size:4em;
-    color:white;
-    position:fixed;
-    left:4px;
-    top:45px;
-}
-
-#lateral:hover:before, #lateral:focus:before{
-    left:-500px
-}
-
-#lateral:hover, #lateral:focus, #lateral:active{
-    overflow-y:scroll;
-    -moz-transform: translate(320px, 0);
-        -webkit-transform: translate(320px, 0);
-            -o-transform: translate(320px, 0);
-                transform: translate(320px, 0);
-    padding-right:0;
-}
-
-#lateral .box{
-    list-style-type:none;
-    margin-bottom:1em;
-    padding-bottom:1em;
-}
-
-#lateral h3{
-    display:inline-block;
-    font-weight:bold;
-    font-size:1.6em;
-    font-style:normal;
-    padding-bottom:0.2em;
-    margin: 2em 0 2em 0.81em;
-    color: rgb(255,255,255);
-    border-bottom: 4px solid rgb(155,155,155);
+#topo{
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    clear: both;
+    background-color:#58ACFA;
 }
 
 #menu{
-    font-style:italic;
-    position:relative;
+    color:white;
+    height: 50px;
+    padding : 10px;
+    background-color:#2E9AFE;
     font-size:1.0em;
-    margin:1em 0 1em -1em;
-    padding:0;
 }
 
-#menu li{padding:0; margin:0;}
+#menu li{
+    padding:0;
+    margin:0;
+}
 
 #menu li a, #menu li a:link{
     font-size:1.2em;
-    color: rgb(255,255,255);
+    colo:rgb(255,255,255);
     text-decoration: none;
-    padding: 0.8em 0 0.8em 1em;
-    display : block;
-    -moz-transition: all 1.2s ease;
-        -webkit-transition: all 1.2s ease;
-            -o-transition: all 1.2s ease;
-                transition: all 1.2s ease;
+    /*padding: 0.8em 0 0.8em 1em;*/
+    display:block;
+        -moz-transition: all 1.2s ease;
+            transition: all 1.2s ease;
 }
 
-#menu li a:hover{
+#menu li a:houver{
     color: rgb(255,255,255);
-    background-color:rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.2);
     -moz-transition: all 0.5s ease;
-        -webkit-transition: all 0.5s ease;
-            -o-transition: all 0.5s ease;
-                transition: all 0.5s ease;
+        transition: all 0.5s ease;
 }
 
-/*Cabecalho*/
-.cabecalho{
-    width:100%;
-    float: left;
-    padding: 50px 8%; background-color:#13c7ae;
-}
-.logo a {
-    width: 221px;
-    height: 48;
-    float: left;
-    background: url({../static/img/pessoa-icon.jpg) no-repeat;
-    font-size: 0;
+#meio{
+    background-color: #f90;
 }
 
-.cabecalho form{
-    width: 30%;
-    float: right;
+#menu li{
+    display: inline-block;
 }
 
-.cabecalho input[type="text"]{
-    width:85%;
-    float:left;
-    padding: 15px 10px;
+#menu li a{
+    color: white;
+    margin-right: 25px;
+    text-decoration: none;
 }
 
-.cabecalho button{
-    width: 15%;
-    float: right;
-    padding: 15px 10px;
-    background-color:#0cae98;
+#menu li a:houver{
     color:#fff;
-    cursor: pointer;
-}
-/*Menu*/
-
-.menu{
-    width:100%;
-    float:left;
-    background-color:#111;
-    padding: 18px 8%;
 }
 
-.menu li{
-    display:inline;
+#label{
+    color:white;
+    padding:15px;
+    font-size:14px;
+}
+#conteudo {
+   padding: 10px;
+   width: 100%;
+   float:left;
+   background-color:#999999;
 }
 
-.menu li a {
-   color:#9d9d9d;
-   margin-right: 25px;
-}
-
-.menu li a:hover{
-    color:#fff;
+#rodape{
+    clear:both;
+    text-align: center;
+    padding:10px;
+    background-color: #ccc;
+    text-decoration: none;
 }
