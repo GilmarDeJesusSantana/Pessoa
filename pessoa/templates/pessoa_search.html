@@ -1,0 +1,14 @@
+{%extends "pessoabase.html"%}
+{%block body%}
+<div class="wrapper">
+	<div id="label" class="box">Nome </div>
+	<div id="label" class="box">Titulo</div>
+	{%for pessoa in pessoas%}
+		<div id="dados" class="box">
+			<p>{{pessoa|linebreaksbr}}</p>
+		</div>
+		<div class="box"></div>
+	{% endfor%}
+</div>
+
+{% endblock%}

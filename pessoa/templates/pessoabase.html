@@ -14,19 +14,15 @@
 </head>
 <body>
 <header id="topo">
-    <h1 class="logo">
-        <a href="index.html" title="Pessoas">Pessoas</a>
-    </h1>
-    <form method="post">
-        <input type="text" placeholder="Nome da Pessoa">
-        <button><i class="pesquisar"></i>Buscar</button>
-    </form>
+    <img class="logo" src="{%static 'img/pessoa-icon.png'%}">
+        <a href="/" title="Pessoas">PESSOAS</a>
+
 </header>
 
-<nav id="menu"">
+<nav id="menu">
     <ul>
         <li><a href="/cadastro_pessoa"/>Cadastro de Pessoas</li>
-        <li><a href="/"/>Pesquisar Pessoas</li>
+        <li><a href="/pessoa_search"/>Pesquisar Pessoas</li>
         <li><a href="#"/>Sair</li>
     </ul>
 </nav>
@@ -74,18 +70,12 @@
   <!--     </nav>-->
   <!--     <h3 class="text-muted">Pessoas</h3>-->
     <!--</div>-->
-<section id="meio">
-<article id="conteudo">
-    <div >
-        <div >
+<section id="conteudo">
             {%block body%}
             {%endblock%}
-        </div>
-    </div>
-</article>
 </section>
 <footer id="rodape">
-    <p>Footer</p>
+    <p></p>
 </footer>
 
 </body>

@@ -6,9 +6,13 @@ from pessoa.forms import RegistraPessoaForm
 from django import forms
 
 def index(request):
-    pessoas = Pessoa.objects.all()
-    return render(request,'index.html',{'pessoas':pessoas})
+    return render(request,'index.html')
 
+class pessoaSearch(TemplateView):
+    template_search = 'pessoa_search.html'
+    def get(self,request):
+        pessoas = Pessoa.objects.all()
+        return render(request,self.template_search,{'pessoas':pessoas})
 
 class CadastroPessoaView(TemplateView):
     template_name = 'pessoaForm.html'
