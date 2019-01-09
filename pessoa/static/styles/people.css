@@ -35,7 +35,7 @@ body{
 }
 #topo{
     width: 100%;
-    height: 120px;
+    height: 100px;
     clear: both;
     background-color:#2E9AFE;
 }
@@ -89,40 +89,102 @@ body{
     font-weight: bold;
 }
 
-/*#menu li a:houver{
-    color:#fef;
-}*/
+#logout{
+    padding-right:10px;
+}
+#menu li a:hover{
+    color:#d8d8d8;
+}
 
-#label{
+
+
+
+/*#dados p{
+    margin:10px;
+}*/
+#conteudo {
+   padding: 5px;
+   width: 100%;
+   height: 100%;
+   background-color:#999999;
+}
+
+.wrapper{
+    display: grid;
+    width:500px;
+    margin-left:10px;
+    grid-template-columns: 250px 1fr;
+    border-radius: 5px;
+    grid-gap:5px;
+
+}
+
+.grid-dados{
     color:white;
-    padding:15px;
-    font-size:14px;
+    padding:5px;
+    font-size:12px;
+    height: 25px;
     font-weight: bold;
     background-color:#ccc;
     text-decoration: none;
 }
 
-#dados{
-    color:red;
-    text-decoration:none;
+#label-titulo{
+    margin-bottom:10px;
+}
+.box{
+    background-color:#ccc;
+    color: #fff;
+    border-radius:5px;
+    padding:5px;
+    height:25px;
 }
 
-#dados p{
-    margin:10px;
+#top-form{
+    color:white;
+    font-size:16px;
+    font-weight: bold;
+    padding: 10px;
 }
-#conteudo {
-   padding: 5px;
-   width: 100%;
-   /*height:488px;*/
-   background-color:#999999;
+#form{
+    padding-left: 20px;
+}
+#id_nome, #id_titulo, #id_cpf, #id_telefone, #id_cep,
+#id_rua, #id_numero, #id_bairro, #id_apartamento,
+#id_bloco, #id_complemento, #registrar, #search-input{
+    width:380px;
+    height:25px;
+    font-size:12px;
+}
+#search{
+    padding: 10px;
+}
+
+#search-input{
+    float:left;
+    padding: 0 3px 0 10px;
+    margin-right:10px;
+}
+
+#search-button{
+    width: 100px;
+    height: 25px;
+    font-size:12px;
+    font-weight:bold;
+    padding: 0px;
+
+}
+
+#registrar{
+    font-size: 14px;
+    font-weight : bold;
+    padding-top: 0px;
 }
 
 #rodape{
     padding:10px;
     background-color: #ccc;
+
+
 }
 
-.wrapper{
-    display: grid;
-    grid-template-columns: 250px 1fr;
-}

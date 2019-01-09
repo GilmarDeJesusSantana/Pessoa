@@ -1,14 +1,20 @@
 {%extends "pessoabase.html"%}
 {%block body%}
-<div class="wrapper">
-	<div id="label" class="box">Nome </div>
-	<div id="label" class="box">Titulo</div>
-	{%for pessoa in pessoas%}
-		<div id="dados" class="box">
-			<p>{{pessoa|linebreaksbr}}</p>
-		</div>
-		<div class="box"></div>
-	{% endfor%}
-</div>
-
+ <form class="form-signin-heading"  method="post">
+    {%csrf_token%}
+     <div id="search">
+        <input id="search-input" type="text" class="form-control" placeholder="Nome ou Titulo">
+        <button id="search-button" class="btn btn-lg btn-primary btn-block" type="submit" name="search">BUSCAR</button>
+    </div>
+    <div class="wrapper grid-dados">
+    	<div id="label-nome" >Nome </div>
+    	<div id="label-titulo" >Titulo</div>
+    	{%for pessoa in pessoas%}
+    		<div id="dados-nome" class="box">
+    			<p>{{pessoa|linebreaksbr}}</p>
+    		</div>
+        <div class="box"><p>{{pessoa.titulo}}</p></div>
+    	{% endfor%}
+    </div>
+ </form>
 {% endblock%}
