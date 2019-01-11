@@ -3,19 +3,19 @@
 <form id="form" class="form-signin-heading" action="{% url 'cadastro_pessoa'%}" method="post">
     {%csrf_token%}
     <h2 id="top-form" class="form-signin-heading">Criar Pessoa</h2>
-        <input style="margin-bottom:10px" id="id_nome" name="nome" type="text" class="form-control" placeholder="Nome " required>
-        <input style="margin-bottom:10px" id="id_titulo" name="titulo" type="text" class="form-control" placeholder="Titulo " required>
-        <input style="margin-bottom:10px"id="id_cpf" name="cpf" type="text" class="form-control" placeholder="CPF">
-        <input style="margin-bottom:10px" id="id_telefone" name="telefone" type="text" class=" form-control" placeholder="Telefone">
-        <input style="margin-bottom:10px" id="id_cep" name="cep" type="text" class="form-control" placeholder="CEP">
-        <input style="margin-bottom:10px" id="id_rua" name="rua" type="text" class="form-control" placeholder="Rua" >
-        <input style="margin-bottom:10px" id="id_numero" name="numero" type="text" class="form-control" placeholder="Numero">
-        <input style="margin-bottom:10px" id="id_bairro" name="bairro" type="text" class="form-control" placeholder="Bairro">
-        <input style="margin-bottom:10px" id="id_apartamento" name="apartamento" type="text" class="form-control" placeholder="Apartamento">
-        <input style="margin-bottom:10px" id="id_bloco" name="bloco" type="text" class="form-control" placeholder="Bloco">
-        <input style="margin-bottom:10px" id="id_complemento" name="complemento" type="text" class="form-control" placeholder="Complemento">
+        <input style="margin-bottom:10px" id="id_nome" name="nome" type="text" class="form-control default-size" placeholder="Nome " required>
+        <input style="margin-bottom:10px" id="id_titulo" name="titulo" type="text" class="form-control default-size" placeholder="Titulo " required>
+        <input style="margin-bottom:10px"id="id_cpf" name="cpf" type="text" class="form-control default-size" placeholder="CPF">
+        <input style="margin-bottom:10px" id="id_telefone" name="telefone" type="text" class=" form-control default-size" placeholder="Telefone">
+        <input style="margin-bottom:10px" id="id_cep" name="cep" type="text" class="form-control default-size" placeholder="CEP">
+        <input style="margin-bottom:10px" id="id_rua" name="rua" type="text" class="form-control default-size" placeholder="Rua" >
+        <input style="margin-bottom:10px" id="id_numero" name="numero" type="text" class="form-control default-size" placeholder="Numero">
+        <input style="margin-bottom:10px" id="id_bairro" name="bairro" type="text" class="form-control default-size" placeholder="Bairro">
+        <input style="margin-bottom:10px" id="id_apartamento" name="apartamento" type="text" class="form-control default-size" placeholder="Apartamento">
+        <input style="margin-bottom:10px" id="id_bloco" name="bloco" type="text" class="form-control default-size" placeholder="Bloco">
+        <input style="margin-bottom:10px" id="id_complemento" name="complemento" type="text" class="form-control default-size" placeholder="Complemento">
 </hr>
 <hr/>
-    <button id="registrar" style="margin-bottom:14px " class="btn btn-lg btn-primary btn-block" type="submit">Registrar</button>
+    <button id="registrar" style="margin-bottom:14px " class="btn btn-lg btn-primary btn-block default-size" type="submit">Registrar</button>
 </form>
 {% endblock %}

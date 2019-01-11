@@ -33,6 +33,7 @@ body{
     padding:0px;
     margin:0px;
 }
+/*Cabecalho e menu*/
 #topo{
     width: 100%;
     height: 100px;
@@ -42,7 +43,6 @@ body{
 
 .logo {
     width: 150px;
-    background-color:#2E9AFE;
 }
 
 #topo a{
@@ -89,26 +89,29 @@ body{
     font-weight: bold;
 }
 
-#logout{
-    padding-right:10px;
-}
 #menu li a:hover{
     color:#d8d8d8;
 }
 
-
-
-
-/*#dados p{
-    margin:10px;
-}*/
-#conteudo {
-   padding: 5px;
-   width: 100%;
-   height: 100%;
-   background-color:#999999;
+#logout{
+    padding-right:10px;
 }
 
+/*Conteudo da pagina*/
+body{
+    background-color:#999999;
+}
+
+#conteudo {
+   padding: 5px;
+}
+
+/*Cabecalho do Grid*/
+#label-titulo{
+    margin-bottom:10px;
+}
+
+/*Caracteristicas do grid*/
 .wrapper{
     display: grid;
     width:500px;
@@ -116,7 +119,6 @@ body{
     grid-template-columns: 250px 1fr;
     border-radius: 5px;
     grid-gap:5px;
-
 }
 
 .grid-dados{
@@ -125,13 +127,11 @@ body{
     font-size:12px;
     height: 25px;
     font-weight: bold;
+    border-width: 0px;
     background-color:#ccc;
     text-decoration: none;
 }
 
-#label-titulo{
-    margin-bottom:10px;
-}
 .box{
     background-color:#ccc;
     color: #fff;
@@ -148,14 +148,15 @@ body{
 }
 #form{
     padding-left: 20px;
+    padding-bottom: 20px;
 }
-#id_nome, #id_titulo, #id_cpf, #id_telefone, #id_cep,
-#id_rua, #id_numero, #id_bairro, #id_apartamento,
-#id_bloco, #id_complemento, #registrar, #search-input{
+.default-size{
     width:380px;
     height:25px;
     font-size:12px;
 }
+
+/*Area de pesquisa*/
 #search{
     padding: 10px;
 }
@@ -167,24 +168,27 @@ body{
 }
 
 #search-button{
-    width: 100px;
+    width: 110px;
     height: 25px;
     font-size:12px;
     font-weight:bold;
     padding: 0px;
 
 }
-
+/*Registrar nova pessoa*/
 #registrar{
     font-size: 14px;
     font-weight : bold;
     padding-top: 0px;
 }
 
+/*Caracteristicas do footer*/
 #rodape{
-    padding:10px;
+    position:   fixed;
+    bottom:     0;
+    left:       0;
+    width:      100%;
+    box-sizing: border-box;
     background-color: #ccc;
-
-
 }
 

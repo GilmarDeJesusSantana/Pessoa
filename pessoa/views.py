@@ -16,8 +16,6 @@ class pessoaSearch(TemplateView):
 
 class CadastroPessoaView(TemplateView):
     template_name = 'pessoaForm.html'
-
-
     # este metodo envia o html para o browser
     def get(self, request):
         print('Metodo chamado----> GET.')
