@@ -1,6 +1,6 @@
 from django import forms
 from django.contrib.auth.models import User
-
+from .peopleUtils import adiciona_erro
 class RegistraPessoaForm(forms.Form):
 
     nome        = forms.CharField(required=True)
@@ -18,14 +18,10 @@ class RegistraPessoaForm(forms.Form):
     def is_valid(self):
         valid = True
         if not super(RegistraPessoaForm, self).is_valid():
-            self.adiciona_erro('Por favor, verifique os dados informados!!')
+            adiciona_erro('Por favor, verifique os dados informados!!')
             valid = False
         user_exists = User.objects.filter(nome=self.data['nome']).exists()
 
         if user_exists:
             self.adiciona_erro ('Pessoa já cadastrada!')
             valid = False
-
-    def adiciona_erro(self, message):
-        errors = self._errors.setdefault(forms.forms.NON_FIELD_ERRORS, forms.utils.ErrorList())
-        errors.append(message)

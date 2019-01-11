@@ -12,7 +12,8 @@ class pessoaSearch(TemplateView):
     template_search = 'pessoa_search.html'
     def get(self,request):
         pessoas = Pessoa.objects.all()
-        return render(request,self.template_search,{'pessoas':pessoas})
+        pessoa_search = Pessoa.objects.filter(nome='Gilmar de Jesus Santana')
+        return render(request,self.template_search,{'pessoas':pessoas}, {'pessoa_search':pessoa_search})
 
 class CadastroPessoaView(TemplateView):
     template_name = 'pessoaForm.html'
@@ -23,6 +24,7 @@ class CadastroPessoaView(TemplateView):
         print('Render processado-->')
 
     def post(self, request):
+        """A Classe chamada abaixo Valida o formulario"""
         form = RegistraPessoaForm(request.POST)
         dados_form = form.data
         print('Metodo chamado----> Post')
