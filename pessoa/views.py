@@ -1,6 +1,6 @@
 from django.shortcuts import render
-from django.template import loader
 from django.views.generic.base import TemplateView
+from django.db.models import Q
 from .models import Pessoa
 from pessoa.forms import RegistraPessoaForm
 from pessoa.search import SearchPeople
@@ -17,8 +17,7 @@ class pessoaSearch(TemplateView):
         print('Classe pessoaSearch --  metodo POST')
         form_search = SearchPeople(request.POST)
         dados_search = form_search.data
-        people_search = Pessoa.objects.filter(nome=dados_search['nome'])
-        print('Objeto capturado na Base : ', people_search)
+        people_search = Pessoa.objects.filter(Q(nome__startswith=dados_search['nome']))
         return render(request, self.template_search, {'pessoas': people_search})
 
 
