@@ -6,7 +6,6 @@ from .peopleUtils import adiciona_erro
 class SearchPeople(forms.Form):
     nome    = forms.CharField(required=True)
     titulo  = forms.CharField(required=False)
-
     def is_valid(self):
         valid = True
         if not super(SearchPeople, self).is_valid():

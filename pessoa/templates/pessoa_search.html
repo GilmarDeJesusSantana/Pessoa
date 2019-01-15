@@ -1,6 +1,6 @@
 {%extends "pessoabase.html"%}
 {%block body%}
- <form class="form-signin-heading"  method="post">
+ <form class="form-signin-heading"  action="{%url 'pessoa_search'%}" method="post">
     {%csrf_token%}
      <div id="search">
         <input id="search-input" type="text" class="form-control default-size" placeholder="Nome ou Titulo" name="nome">
@@ -8,7 +8,8 @@
     </div>
     <div class="wrapper grid-dados">
     	<div id="label-nome" >Nome </div>
-    	<div id="label-titulo">Titulo</div>
+    	<div id="label-titulo">Titulo </div>
+
     	{%for pessoa in pessoas%}
     		<div id="dados-nome" class="box">
     			<p>{{pessoa|linebreaksbr}}</p>

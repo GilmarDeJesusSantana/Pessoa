@@ -3,7 +3,7 @@ from django.template import loader
 from django.views.generic.base import TemplateView
 from .models import Pessoa
 from pessoa.forms import RegistraPessoaForm
-from django import forms
+from pessoa.search import SearchPeople
 
 def index(request):
     return render(request,'index.html')
@@ -12,8 +12,15 @@ class pessoaSearch(TemplateView):
     template_search = 'pessoa_search.html'
     def get(self,request):
         pessoas = Pessoa.objects.all()
-        pessoa_search = Pessoa.objects.filter(nome='Gilmar de Jesus Santana')
-        return render(request,self.template_search,{'pessoas':pessoas}, {'pessoa_search':pessoa_search})
+        return render(request,self.template_search,{'pessoas':pessoas})
+    def post(self,request):
+        print('Classe pessoaSearch --  metodo POST')
+        form_search = SearchPeople(request.POST)
+        dados_search = form_search.data
+        people_search = Pessoa.objects.filter(nome=dados_search['nome'])
+        print('Objeto capturado na Base : ', people_search)
+        return render(request, self.template_search, {'pessoas': people_search})
+
 
 class CadastroPessoaView(TemplateView):
     template_name = 'pessoaForm.html'
@@ -27,7 +34,7 @@ class CadastroPessoaView(TemplateView):
         """A Classe chamada abaixo Valida o formulario"""
         form = RegistraPessoaForm(request.POST)
         dados_form = form.data
-        print('Metodo chamado----> Post')
+
         pessoa = Pessoa(nome=dados_form['nome'],
                         titulo= dados_form['titulo'],
                         cpf=dados_form['cpf'],
@@ -44,5 +51,3 @@ class CadastroPessoaView(TemplateView):
         pessoa.save()
         print ('Dados Registrados!!')
         return render(request,'pessoaForm.html')
-#def post(self, request):
-#    pass
