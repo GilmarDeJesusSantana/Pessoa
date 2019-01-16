@@ -8,7 +8,7 @@ from django.views.generic.base import TemplateView
 
 class PeopleDetails(TemplateView):
     template_details = 'details.html'
-
+    people_id =
     def get(self,request):
         return render(request,self.template_details)
 

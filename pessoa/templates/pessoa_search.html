@@ -12,9 +12,9 @@
 
     	{%for pessoa in pessoas%}
     		<div id="dados-nome" class="box">
-    			<p><a href="/details">{{pessoa|linebreaksbr}}</a></p>
+    			<a href="/details">{{pessoa|linebreaksbr}}</a>
     		</div>
-        <div class="box"><p>{{pessoa.titulo}}</p></div>
+        <div class="box">{{pessoa.titulo}}</div>
     	{% endfor%}
     </div>
  </form>
