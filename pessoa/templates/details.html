@@ -1,12 +1,21 @@
 {%extends "pessoabase.html"%}
 {%block body%}
-    <form>
-        <div><strong> DETALHES</strong></div>
+        <div><strong> DETALHES CADASTRAIS</strong></div>
         {%for pessoa in pessoas%}
     		<div id="dados-nome" class="box">
-    			<a href="/details">{{pessoa|linebreaksbr}}</a>
+    			{{pessoa|linebreaksbr}}
     		</div>
-        <div class="box">{{pessoa.titulo}}</div>
+            <div class="box">
+                {{pessoa.titulo}}
+            </div>
+            <div class="box">{{pessoa.cpf}}</div>
+            <div class="box">{{pessoa.telefone}}</div>
+            <div class="box">{{pessoa.cep}}</div>
+            <div class="box">{{pessoa.rua}}</div>
+            <div class="box">{{pessoa.numero}}</div>
+            <div class="box">{{pessoa.bairro}}</div>
+            <div class="box">{{pessoa.apartamento}}</div>
+            <div class="box">{{pessoa.bloco}}</div>
+            <div class="box">{{pessoa.complemento}}</div>
     	{% endfor%}
-    </form>
 {%endblock%}

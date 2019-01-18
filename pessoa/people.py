@@ -8,9 +8,10 @@ from django.views.generic.base import TemplateView
 
 class PeopleDetails(TemplateView):
     template_details = 'details.html'
-    people_id =
-    def get(self,request):
-        return render(request,self.template_details)
+    def get(self,request, pessoa_id):
+        print('Classe People Details, ID da Pessoa' +  pessoa_id)
+        people = Pessoa.objects.filter(Q(id=pessoa_id))
+        return render(request,self.template_details,{'pessoas':people})
 
 class PeopleSearch(TemplateView):
     template_search = 'pessoa_search.html'
