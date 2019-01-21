@@ -198,4 +198,28 @@ body{
     box-sizing: border-box;
     background-color: #ccc;
 }
+/*Caracteristicas da caixa que agrupo os campos detalhados de cada pessoas*/
+#box_details{
+    display: grid;
+    grid-template-columns:110px 1fr;
+    background-color: #ccc;
+    border-radius: 5px;
+    text-weight: bold;
+    font-size: 14px;
+    width: 350px;
+    margin : 15px;
+    padding: 10px;
+    color: white;
+}
 
+#box_details div{
+    padding: 5px;
+}
+/*Rotulo do titulo na tela de Detalhes*/
+#label_details{
+    color: white;
+    text-weight: bold;
+    font-size: 16px;
+    margin:15px;
+
+}

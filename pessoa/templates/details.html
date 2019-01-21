@@ -1,21 +1,30 @@
 {%extends "pessoabase.html"%}
 {%block body%}
-        <div><strong> DETALHES CADASTRAIS</strong></div>
+    <div id="label_details"><strong> DETALHES CADASTRAIS</strong></div>
+    <div id="box_details">
         {%for pessoa in pessoas%}
-    		<div id="dados-nome" class="box">
-    			{{pessoa|linebreaksbr}}
-    		</div>
-            <div class="box">
-                {{pessoa.titulo}}
-            </div>
-            <div class="box">{{pessoa.cpf}}</div>
-            <div class="box">{{pessoa.telefone}}</div>
-            <div class="box">{{pessoa.cep}}</div>
-            <div class="box">{{pessoa.rua}}</div>
-            <div class="box">{{pessoa.numero}}</div>
-            <div class="box">{{pessoa.bairro}}</div>
-            <div class="box">{{pessoa.apartamento}}</div>
-            <div class="box">{{pessoa.bloco}}</div>
-            <div class="box">{{pessoa.complemento}}</div>
+            <div>Nome: </div>
+            <div>{{pessoa|linebreaksbr}}</div>
+            <div>Titulo: </div>
+            <div>{{pessoa.titulo}}</div>
+            <div>CPF:</div>
+            <div>{{pessoa.cpf}}</div>
+            <div>Telefone:</div>
+            <div>{{pessoa.telefone}}</div>
+            <div>CEP:</div>
+            <div>{{pessoa.cep}}</div>
+            <div>Rua: </div>
+            <div>{{pessoa.rua}}</div>
+            <div>Numero: </div>
+            <div>{{pessoa.numero}}</div>
+            <div>Bairro: </div>
+            <div>{{pessoa.bairro}}</div>
+            <div>Apartamento:</div>
+            <div>{{pessoa.apartamento}}</div>
+            <div>Bloco:</div>
+            <div> {{pessoa.bloco}}</div>
+            <div>Complemento:</div>
+            <div> {{pessoa.complemento}}</div>
     	{% endfor%}
+    </div>
 {%endblock%}
