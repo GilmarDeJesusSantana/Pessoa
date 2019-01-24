@@ -3,6 +3,7 @@
 <form id="form" class="form-signin-heading" action="{% url 'cadastro_pessoa'%}" method="post">
     {%csrf_token%}
     <h2 id="top-form" class="form-signin-heading">Criar Pessoa</h2>
+    <hr/>
         <input style="margin-bottom:10px" id="id_nome" name="nome" type="text" class="form-control default-size" placeholder="Nome " required>
         <input style="margin-bottom:10px" id="id_titulo" name="titulo" type="text" class="form-control default-size" placeholder="Titulo " required>
         <input style="margin-bottom:10px"id="id_cpf" name="cpf" type="text" class="form-control default-size" placeholder="CPF">
