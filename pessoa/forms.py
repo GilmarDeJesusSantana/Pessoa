@@ -7,6 +7,7 @@ class RegistraPessoaForm(forms.Form):
     titulo      = forms.CharField(required=True)
     cpf         = forms.CharField(required=False)
     telefone    = forms.CharField(required=False)
+    email       = forms.CharField(required=False)
     cep         = forms.CharField(required=False)
     rua         = forms.CharField(required=False)
     numero      = forms.CharField(required=False)

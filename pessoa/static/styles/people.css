@@ -148,8 +148,15 @@ body{
 }
 #form{
     padding-left: 20px;
-    padding-bottom: 20px;
+    paddi<div>Telefone:</div>
+            <div>{{pessoa.telefone}}</div>ng-bottom: 20px;
 }
+
+/*Linha decorativa no Formulario de cadastro*/
+hr{
+    width:380px;
+}
+
 .default-size{
     width:380px;
     height:25px;

@@ -16,22 +16,25 @@ class PeopleDetails(TemplateView):
 class PeopleSearch(TemplateView):
     template_search = 'pessoa_search.html'
     def get(self,request):
-        pessoas = Pessoa.objects.all()
-        return render(request,self.template_search,{'pessoas':pessoas})
+        return render(request,self.template_search)
+
     def post(self,request):
-        print('Classe pessoaSearch --  metodo POST')
         form_search = SearchPeople(request.POST)
         dados_search = form_search.data
-        people_search = Pessoa.objects.filter(Q(nome__startswith=dados_search['nome']))
+
+        #Usei o metodo isdigit() da classe string para verificar se é um numero.
+        if dados_search['nome'].isdigit():
+            people_search = Pessoa.objects.filter(Q(titulo__startswith=dados_search['nome']))
+        else:
+            people_search = Pessoa.objects.filter(Q(nome__startswith=dados_search['nome']))
+
         return render(request, self.template_search, {'pessoas': people_search})
 
 class CadastroPessoaView(TemplateView):
     template_name = 'pessoaForm.html'
     # este metodo envia o html para o browser
     def get(self, request):
-        print('Metodo chamado----> GET.')
         return render(request, self.template_name)
-        print('Render processado-->')
 
     def post(self, request):
         """A Classe chamada abaixo Valida o formulario"""
@@ -43,6 +46,7 @@ class CadastroPessoaView(TemplateView):
                         cpf=dados_form['cpf'],
                         telefone= dados_form['telefone'],
                         flag_delete='A',
+                        email= dados_form['email'],
                         rua=dados_form['rua'],
                         numero=dados_form['numero'],
                         bairro=dados_form['bairro'],

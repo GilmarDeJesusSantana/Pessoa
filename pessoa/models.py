@@ -7,6 +7,7 @@ class  Pessoa(models.Model):
     titulo= models.CharField(max_length=12)
     cpf = models.CharField(max_length=11)
     telefone = models.CharField(max_length=15)
+    email = models.CharField(max_length=50)
     flag_delete = models.CharField(max_length=1)
     #Endereco
     rua = models.CharField(max_length=100)
