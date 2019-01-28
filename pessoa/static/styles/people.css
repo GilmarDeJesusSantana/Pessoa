@@ -51,6 +51,11 @@ body{
     text-decoration: none;
     font-weight: bold;
 }
+
+#config{
+    position: absolute;
+    right:10 px;
+}
 #menu{
     color:white;
     height: 50px;
@@ -148,8 +153,6 @@ body{
 }
 #form{
     padding-left: 20px;
-    paddi<div>Telefone:</div>
-            <div>{{pessoa.telefone}}</div>ng-bottom: 20px;
 }
 
 /*Linha decorativa no Formulario de cadastro*/

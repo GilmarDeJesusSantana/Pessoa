@@ -11,5 +11,3 @@ PeopleSearch()
 PeopleDetails()
 
 
-
-
