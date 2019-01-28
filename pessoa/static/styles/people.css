@@ -53,11 +53,12 @@ body{
 }
 
 #config{
-    position: absolute;
-    right:10 px;
+    position:relative;
+    left:900px;
 }
+
 #menu{
-    color:white;
+    color:black;
     height: 50px;
     padding : 18px;
     background-color:#58ACFA;
@@ -99,6 +100,8 @@ body{
 }
 
 #logout{
+    position:relative;
+    left:900px;
     padding-right:10px;
 }
 
