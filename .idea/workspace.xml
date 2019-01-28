@@ -2,26 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="815c628b-3484-4cb1-ae2d-b6e461bff1c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/configuracao/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/people.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/people.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/people/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/people/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/people/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/people/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pessoa/static/js/jquery-1.9.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pessoa/static/styles/bootstrap.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pessoa/static/styles/people.css" beforeDir="false" afterPath="$PROJECT_DIR$/pessoa/static/styles/people.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pessoa/static/styles/people.old.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pessoa/templates/pessoabase.html" beforeDir="false" afterPath="$PROJECT_DIR$/pessoa/templates/pessoabase.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pessoa/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/pessoa/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuario/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuario/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuario/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuario/migrations/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuario/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuario/tests.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/usuario/views.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,10 +22,15 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/pessoa/templates/pessoabase.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+                <state relative-caret-position="165">
+                  <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
                 </state>
               </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/pessoa/static/styles/bootstrap.min.css">
+              <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
@@ -100,7 +91,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/login/templates/login.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
+                <state relative-caret-position="300">
                   <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
                 </state>
               </provider>
@@ -109,8 +100,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/pessoa/static/styles/people.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="270">
-                  <caret line="54" column="1" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
+                <state relative-caret-position="30">
+                  <caret line="103" column="15" selection-start-line="103" selection-start-column="15" selection-end-line="103" selection-end-column="15" />
                 </state>
               </provider>
             </entry>
@@ -163,7 +154,6 @@
         <option value="$PROJECT_DIR$/pessoa/templates/pessoa_cadastro.html" />
         <option value="$PROJECT_DIR$/pessoa/templates/style.css" />
         <option value="$PROJECT_DIR$/pessoa/static/js/jquery-1.9.1.js" />
-        <option value="$PROJECT_DIR$/pessoa/static/styles/people.old.css" />
         <option value="$PROJECT_DIR$/pessoa/templates/index.html" />
         <option value="$PROJECT_DIR$/pessoa/peopleUtils.py" />
         <option value="$PROJECT_DIR$/pessoa/templates/form_search.py" />
@@ -190,8 +180,9 @@
         <option value="$PROJECT_DIR$/pessoa/templates/usuario.html" />
         <option value="$PROJECT_DIR$/people/settings.py" />
         <option value="$PROJECT_DIR$/pessoa/views.py" />
-        <option value="$PROJECT_DIR$/pessoa/static/styles/people.css" />
+        <option value="$PROJECT_DIR$/pessoa/static/styles/people.old.css" />
         <option value="$PROJECT_DIR$/pessoa/templates/pessoabase.html" />
+        <option value="$PROJECT_DIR$/pessoa/static/styles/people.css" />
       </list>
     </option>
   </component>
@@ -242,6 +233,26 @@
               <item name="Pessoa" type="b2602c69:ProjectViewProjectNode" />
               <item name="Pessoa" type="462c0819:PsiDirectoryNode" />
               <item name="login" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pessoa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pessoa" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pessoa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pessoa" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pessoa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pessoa" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -259,6 +270,13 @@
               <item name="Pessoa" type="462c0819:PsiDirectoryNode" />
               <item name="pessoa" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Pessoa" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pessoa" type="462c0819:PsiDirectoryNode" />
+              <item name="pessoa" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Pessoa" type="b2602c69:ProjectViewProjectNode" />
@@ -286,11 +304,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pessoa/static/styles" />
+      <recent name="$PROJECT_DIR$/pessoa/static/js" />
       <recent name="$PROJECT_DIR$/login/static/js" />
       <recent name="$PROJECT_DIR$/login/static/css" />
       <recent name="$PROJECT_DIR$/pessoa/templates" />
-      <recent name="$PROJECT_DIR$/login/static" />
-      <recent name="$PROJECT_DIR$/configuracao" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/pessoa/templates" />
@@ -402,7 +420,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.33115825" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.33115825" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.31993568" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -468,13 +486,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="14" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pessoa/static/styles/people.old.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="536">
-          <caret line="170" column="17" selection-start-line="170" selection-start-column="17" selection-end-line="170" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -601,13 +612,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pessoa/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" lean-forward="true" selection-start-column="11" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/people/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -622,13 +626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pessoa/templates/usuario.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -673,24 +670,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/login/templates/login.html">
+    <entry file="file://$PROJECT_DIR$/pessoa/static/styles/people.old.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        <state relative-caret-position="511">
+          <caret line="170" selection-start-line="170" selection-end-line="170" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pessoa/static/styles/people.css">
+    <entry file="file://$PROJECT_DIR$/pessoa/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="54" column="1" selection-start-line="54" selection-start-column="1" selection-end-line="54" selection-end-column="1" />
+        <state>
+          <caret column="26" lean-forward="true" selection-start-column="11" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pessoa/static/js/jquery-3.3.1.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pessoa/templates/usuario.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="42" selection-start-line="6" selection-start-column="42" selection-end-line="6" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pessoa/static/styles/bootstrap.min.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="30" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pessoa/templates/pessoabase.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
+        <state relative-caret-position="165">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pessoa/static/styles/people.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="103" column="15" selection-start-line="103" selection-start-column="15" selection-end-line="103" selection-end-column="15" />
         </state>
       </provider>
     </entry>
