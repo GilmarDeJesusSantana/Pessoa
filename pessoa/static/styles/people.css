@@ -236,3 +236,22 @@ hr{
     margin:15px;
 
 }
+/*Agrupador dos campos do cadastro de usuarios*/
+/*#box-user{
+    display : grid;
+    width: 500px;
+    margin-left:10px;
+    grid-template-columns: 1fr;
+    border-radius : 5px;
+    grid
+}*/
+
+#
+.wrapper{
+    display: grid;
+    width:500px;
+    margin-left:10px;
+    grid-template-columns: 250px 1fr;
+    border-radius: 5px;
+    grid-gap:5px;
+}
