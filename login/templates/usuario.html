@@ -1,11 +1,18 @@
 {% extends "pessoabase.html"%}
 {%block body%}
-<div id="box-user" class="form-signin-heading wrapper" >
-<div id="top-form">Novo Usuário</div><hr/>
-<div style="margin-bottom:10px"style="margin-bottom:05px"><input id="nome_user" class="form-control default-size" type="text" placeholder="Nome" name="nome"></div>
-<div style="margin-bottom:05px"><input id="usuario_user" class="form-control default-size" type="text" placeholder="Usuário" name="usuario"></div>
-<div style="margin-bottom:05px"><input id="senha_user" class="form-control default-size" type="text" placeholder="Senha" name="senha"></div>
-<div style="margin-bottom:05px"><input id="perfil_user" class="form-control default-size" type="text" placeholder="Perfil" name="perfil"></div>
-<div><input id="salvar_user" class="btn btn-lg btn-primary btn-block default-size" type="submit" name="salvar"> Registrar</div>
-</div>
+<form id="form" action="{% url 'usuarios'%}" method="post">
+    {%csrf_token%}
+    <div id="box-user" class="form-signin-heading wrapper" >
+          <div id="top-form">Novo Usuário</div><hr/>
+          <div style="margin-bottom:05px"style="margin-bottom:05px"><input id="nome_user" class="form-control default-size" type="text" placeholder="Nome" name="nome"></div>
+          <div style="margin-bottom:05px"><input id="usuario_user" class="form-control default-size" type="text" placeholder="Usuário" name="usuario"></div>
+          <div style="margin-bottom:05px"><input id="senha_user" class="form-control default-size" type="password" placeholder="Senha" name="senha"></div>
+          <div>
+              <input id="perfil_user" class="form-check-input" type="checkbox" name="perfil">
+              <label id="perfil_user_label" class="form-check-label">Administrador</label>
+          </div>
+          <hr/>
+          <button id="salvar_user" style="margin-bottom:14px " class="btn btn-lg btn-primary btn-block default-size registrar" type="submit"> Registrar</button>
+    </div>
+</form>
 {%  endblock %}

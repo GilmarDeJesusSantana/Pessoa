@@ -196,7 +196,7 @@ hr{
 }
 
 /*Registrar nova pessoa*/
-#registrar{
+.registrar{
     font-size: 14px;
     font-weight : bold;
     padding-top: 0px;
@@ -241,4 +241,15 @@ hr{
 #box-user{
     grid-template-columns:1fr;
     width: 200px;
+}
+
+#perfil_user{
+    margin-left:0px;
+}
+
+#perfil_user_label{
+    font-size : 15px;
+    margin-left: 20px;
+    padding-top: 2px;
+    color: white;
 }
