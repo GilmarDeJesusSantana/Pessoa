@@ -9,7 +9,6 @@ class UsuarioForm(forms.Form):
 
     def is_valid(self):
         valid =True
-        print('Os campos são validos ???')
         if not super(UsuarioForm,self).is_valid():
             self.adiciona_erro('Verifique os dados informados.')
             valid = False
