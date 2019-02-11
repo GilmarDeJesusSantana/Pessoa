@@ -4,7 +4,7 @@
     {%csrf_token%}
     <div id="box-user" class="form-signin-heading wrapper" >
           <div id="top-form">Novo Usuário</div><hr/>
-          <div style="margin-bottom:05px"style="margin-bottom:05px"><input id="nome_user" class="form-control default-size" type="text" placeholder="Nome" name="nome"></div>
+          <div style="margin-bottom:05px"style="margin-bottom:05px"><input id="nome_user" class="form-control default-size" type="text" placeholder="Nome" name="nome_user"></div>
           <div style="margin-bottom:05px"><input id="usuario_user" class="form-control default-size" type="text" placeholder="Usuário" name="usuario"></div>
           <div style="margin-bottom:05px"><input id="senha_user" class="form-control default-size" type="password" placeholder="Senha" name="senha"></div>
           <div>
@@ -15,12 +15,12 @@
           <button id="salvar_user" style="margin-bottom:14px " class="btn btn-lg btn-primary btn-block default-size registrar" type="submit"> Registrar</button>
     </div>
     {%if form.errors %}
-    <div class = "alert alert-danger">
-        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
-            &times;
-        </button>
-        {{form.non_field_errors}}
-    </div>
+        <div class = "alert alert-danger">
+            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
+                &times;
+            </button>
+            {{form.non_field_errors}}
+        </div>
     {% endif %}
 </form>
 {%  endblock %}
