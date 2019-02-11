@@ -52,10 +52,10 @@ body{
     font-weight: bold;
 }
 
-#config{
+/*#config{
     position:relative;
     left:900px;
-}
+}*/
 
 #menu{
     color:black;
@@ -99,11 +99,11 @@ body{
     color:#d8d8d8;
 }
 
-#logout{
+/*#logout{
     position:relative;
     left:900px;
     padding-right:10px;
-}
+}*/
 
 /*Conteudo da pagina*/
 body{
@@ -252,4 +252,8 @@ hr{
     margin-left: 20px;
     padding-top: 2px;
     color: white;
+}
+
+#popup{
+    width:400px;
 }
