@@ -12,7 +12,8 @@ class UsuarioForm(forms.Form):
         if not super(UsuarioForm,self).is_valid():
             self.adiciona_erro('Verifique os dados informados.')
             valid = False
-        user_exists = Usuario.objects.filter(nome_user=self.data['nome_user'])
+        user_exists = Usuario.objects.filter(nome_user__contains=self.data['nome_user'])
+
         if user_exists:
             self.adiciona_erro ('Usuário já cadastrado.')
             valid = False
