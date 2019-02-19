@@ -5,10 +5,10 @@ from login.forms_usuarios import UsuarioForm
 class Login(TemplateView):
     template_login = 'login.html'
 
-    def get(self,request):
+    def get(self,request, *args, **kwargs):
         return render(request,self.template_login)
 
-    def post(self,request):
+    def post(self,request, *args, **kwargs):
         form = UsuarioForm(request.POST)
         if form.login_is_valid():
             return index(request)

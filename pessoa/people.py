@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from django.views.generic.base import TemplateView
 from pessoa.search import SearchPeople
 from pessoa.forms import RegistraPessoaForm
 from .models import Pessoa

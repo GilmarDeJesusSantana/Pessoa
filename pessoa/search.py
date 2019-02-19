@@ -17,3 +17,4 @@ class SearchPeople(forms.Form):
         if not people_exists:
             adiciona_erro('Pessoa não localizada!')
             valid = False
+        return valid

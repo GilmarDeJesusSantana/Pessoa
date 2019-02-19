@@ -13,6 +13,7 @@ class CadastrarUsuario(TemplateView):
         print('Antes da Validao do formulario.')
         if form.is_valid():
             dados_form = form.data
+            print('Perfil do usuário ---> ',dados_form['perfil'])
             usuario_login = Usuario(nome_user = dados_form['nome_user'],
                                     usuario   = dados_form['usuario'],
                                     senha     = dados_form['senha'],

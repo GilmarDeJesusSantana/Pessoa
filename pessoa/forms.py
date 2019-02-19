@@ -24,5 +24,6 @@ class RegistraPessoaForm(forms.Form):
         user_exists = User.objects.filter(nome=self.data['nome']).exists()
 
         if user_exists:
-            self.adiciona_erro ('Pessoa já cadastrada!')
+            adiciona_erro('Pessoa já cadastrada!')
             valid = False
+        return valid
