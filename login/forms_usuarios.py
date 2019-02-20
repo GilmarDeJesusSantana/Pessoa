@@ -26,22 +26,29 @@ class UsuarioForm(forms.Form):
         valid = True
         user = self.data['nome_user']
         senha = self.data['senha']
-        # print('Usuario_Form .........', user)
-        # print('Senha_Form...........', senha)
-        user_login = Usuario.objects.get(usuario=user)
-        print('Usuario_DataBase .........', user_login.usuario)
-        print('Senha_DataBase............', user_login.senha)
-        if  user_login.senha != senha:
-            self.adiciona_erro('Usuário ou senha inválido')
-            valid = False
-            if user_login.nome_user != user:
-                print('Segundo portao ||||||||')
+        print('Usuario_Form .........', user)
+        print('Senha_Form...........', senha)
+
+        if len(user)>0 and len(senha)>0:
+            user_login = Usuario.objects.get(usuario=user)
+            print('Usuario_DataBase .........', user_login.usuario)
+            print('Senha_DataBase............', user_login.senha)
+            print('Objeto....................', user_login)
+            if  user_login.senha != senha:
+                self.adiciona_erro('Usuário ou senha inválido')
                 valid = False
-        return valid
+                if user_login.nome_user != user:
+                    print('Segundo portao ||||||||')
+                    valid = False
+            return valid
+        else:
+            valid = False
+            self.adiciona_erro('Usuário ou senha inválido')
+            return valid
 
-        # print('Usuario =======>>', user_login.senha, 'Para ser logado')
-        # print ('Usuario ======> ', user_login_exists)
 
-    def adiciona_erro(self, message):
-        errors = self._errors.setdefault(forms.forms.NON_FIELD_ERRORS, forms.utils.ErrorList())
-        errors.append(message)
+    def adiciona_erro(self,message):
+        #Comando necessario para evitar a excecao 'NoneType' object has no attribute 'setdefault'
+        self.full_clean()
+        error = self._errors.setdefault(forms.forms.NON_FIELD_ERRORS, forms.utils.ErrorList())
+        error.append(message)

@@ -12,3 +12,4 @@ class Login(TemplateView):
         form = UsuarioForm(request.POST)
         if form.login_is_valid():
             return index(request)
+        return render(request, self.template_login, {'form': form})
