@@ -37,14 +37,14 @@
                     </div>
                 </form>
             </div>
-            {%if form.errors %}
+             {%if form.errors %}
                     <div id="popup" class = "alert alert-danger">
                         <button type="button" class="close" data-dismiss="alert" aria-hidden="true">
                              &times;
                         </button>
                         {{form.non_field_errors}}
                     </div>
-                    {% endif %}
+            {% endif %}
         </div>
     </div>
 </div>
